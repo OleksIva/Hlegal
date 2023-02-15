@@ -1,0 +1,50 @@
+$breakpoint-s: 375px;
+$breakpoint-m: 768px;
+$breakpoint-l: 1024px;
+$breakpoint-xl: 1440px;
+$breakpoint-xxl: 1920px;
+
+$color-main: #323264;
+$color-alt: #46466E;
+$color-soft: #686887;
+$color-accent: #F0145A;
+$color-regular: #24A3FF;
+$color-hover: #0085FF;
+$color-active: #006CCF; 
+$color-bg: #F5F5FA;
+$color-bg-alt: #EDEDF7;
+$color-text: #B3B3BA;
+$color-separator: #E6E6F0;
+$color-gradient: linear-gradient(128.63deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
+$color-gradient-soft: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+$color-gradient-red: linear-gradient(323.35deg, #F0145A 6.7%, #693264 70.36%);
+$color-gradient-supersoft: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+$color-gradient-redtext: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+
+@mixin gradient_text {
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+@mixin link-arrow {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $color-regular;
+    text-decoration: none;
+    line-height: 17px;
+    position: relative;
+}
+
+@mixin dot-divider {
+        content: '';
+        pointer-events: none;
+        position: absolute;
+        background: $color-separator;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+}
